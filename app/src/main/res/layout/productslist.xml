@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardElevation="15dp"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/profile_image"
+                android:layout_margin="5dp"
+                android:src="@drawable/profile"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_500"
+                android:layout_margin="5dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="1:1"
+                android:id="@+id/post_image"
+                tools:ignore="MissingConstraints"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_favorite_border_24"
+                android:id="@+id/like"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:text="Out Off Stock"
+                android:id="@+id/outOffStock"
+                android:textColor="@color/red"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"
+
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_shopping_cart_24"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/addToCart"
+
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:id="@+id/no_of_likes"
+            android:text="123 likes"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹"
+                android:id="@+id/rsSymbol"
+                android:textSize="20sp"
+                android:layout_marginStart="30dp"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/rsSymbol"
+            android:text="40"
+            android:id="@+id/discountedPriceTv"
+            android:textColor="@color/green"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:text="50"
+            android:id="@+id/originalPriceTv"
+            android:textColor="@color/green"
+            android:layout_toEndOf="@id/discountedPriceTv"
+
+            />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

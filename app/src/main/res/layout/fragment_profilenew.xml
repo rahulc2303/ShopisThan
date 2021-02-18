@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".uinew.profile.ProfileNewFragment">
+
+    <RelativeLayout
+        android:id="@+id/r1212"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            app:title="Menu"
+            app:titleTextColor="@color/white"
+
+            />
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/CreateProfile"
+            android:background="@color/white"
+            android:text="Setup Your Profile click here.."
+            android:textAllCaps="false"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/relative"
+            android:visibility="gone"
+            >
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_img"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/profile"
+
+                />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="15dp"
+                android:hint="UserName"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/email_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="40dp"
+                android:hint="UserEmail_id"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/Edit_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="290dp"
+                android:src="@drawable/ic_baseline_edit_24" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/CreateShop"
+        android:visibility="gone"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+
+            >
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/store_blue"
+                android:id="@+id/shop_img"
+                android:layout_centerInParent="true"
+
+
+                >
+
+            </ImageView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Create your Shop"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/blue"
+                android:layout_below="@id/shop_img"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/CreateShop_btn"
+
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/ViewShop"
+        android:visibility="gone"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+
+            >
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/store_blue"
+                android:id="@+id/shop_img1"
+                android:layout_centerInParent="true"
+                >
+
+            </ImageView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="View My Shop"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/blue"
+                android:layout_below="@id/shop_img1"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/ViewShop_btn"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="180dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:layout_marginStart="190dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile"
+            android:layout_centerInParent="true"
+            android:id="@+id/im1"
+            />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Wish List"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:layout_below="@id/im1"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/wishlist"
+
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="300dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:id="@+id/AddProducts"
+        android:visibility="invisible"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profile"
+                android:layout_centerInParent="true"
+                android:id="@+id/im2"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add Products"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:layout_below="@id/im2"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/addProducts"
+
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Logout"
+        android:textSize="30dp"
+        android:id="@+id/logout"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Setting"
+        android:textSize="30dp"
+        android:id="@+id/settingsBtn"
+        android:layout_alignParentEnd="true"
+        />
+
+
+
+
+</RelativeLayout>

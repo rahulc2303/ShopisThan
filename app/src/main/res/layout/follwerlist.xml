@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/profile"
+        android:id="@+id/storeProfileImg"
+        />
+        <TextView
+         android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="ShopName"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/storeName"
+            android:layout_marginStart="7dp"
+        android:layout_below="@+id/storeProfileImg"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+
+
+        />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="360dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+
+        >
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            
+       
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Shop Name"
+            android:id="@+id/ShopName"
+            android:textSize="16sp"
+            android:textColor="@color/blue"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Shop Address"
+            android:id="@+id/ShopAddress"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ShopName"
+            />
+            
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_input"
+                android:text="Follow"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:textAllCaps="false"
+                android:id="@+id/follow_btn"
+                android:visibility="gone"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:layout_constraintDimensionRatio="1:1"
+                android:id="@+id/store_image"
+                tools:ignore="MissingConstraints"
+                android:layout_below="@+id/ShopAddress"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go To Shop Profile"
+                android:layout_below="@+id/store_image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:textSize="16sp"
+                android:id="@+id/gotoshop"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

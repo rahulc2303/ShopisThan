@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginPageActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/shoplogo" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Phone.no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alegreya_sc_bold_italic"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textSize="25sp"
+        android:layout_below="@+id/imageView1"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_input"
+
+        />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/googlebtn"
+        android:layout_below="@+id/textView"
+        android:background="@drawable/custom_input"
+        />
+
+</RelativeLayout>

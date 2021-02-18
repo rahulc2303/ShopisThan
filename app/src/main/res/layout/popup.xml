@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="575dp"
+    android:layout_gravity="center"
+
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/shop"
+        android:id="@+id/img_seller_new"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Store From"
+        android:layout_below="@id/img_seller_new"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:id="@+id/shop"
+        android:inputType="text"
+
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/shop_name_new"
+        android:layout_below="@id/shop"
+        android:background="@drawable/custom_input"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint=" Shop Name"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:inputType="text"
+
+        />
+
+
+    <!--        />-->
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/shop_phone_new"
+        android:layout_below="@id/shop_name_new"
+        android:background="@drawable/custom_input"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint=" Shop Phone No"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:inputType="number"
+
+
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/shop_email_new"
+        android:background="@drawable/custom_input"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Email"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/shop_phone_new"
+        android:padding="10dp"
+        android:inputType="text"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/shopGST_new"
+        android:layout_below="@id/shop_email_new"
+        android:background="@drawable/custom_input"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="GST No."
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:inputType="textPassword"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/shop_address_new"
+        android:layout_below="@id/shopGST_new"
+        android:background="@drawable/custom_input"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint=" Shop Address"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:inputType="textPostalAddress"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/store_btn_new"
+        android:layout_below="@id/shop_address_new"
+        android:textColorHint="@color/purple_700"
+        android:text="Create A Store"
+        android:textSize="20dp"
+        android:background="@color/white"
+        android:textColor="@color/purple_700"
+        android:textAllCaps="false"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+
+        />
+
+</RelativeLayout>

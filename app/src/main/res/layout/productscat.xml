@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+
+        >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/product_name121"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            />
+
+
+        <ImageView
+            android:id="@+id/product_image121"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/product_name121"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="2dp"
+            android:scaleType="fitCenter"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹"
+            android:id="@+id/rsSymbol"
+            android:textSize="20sp"
+            android:layout_below="@+id/product_image121"
+            android:layout_marginStart="100dp"
+            />
+
+
+        <TextView
+            android:id="@+id/dis_price121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234"
+            android:layout_toEndOf="@id/rsSymbol"
+            android:layout_below="@+id/product_image121"
+            android:textColor="@color/blue"
+            android:layout_marginStart="5dp"
+
+            />
+
+        <TextView
+            android:id="@+id/product_price121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_image121"
+            android:layout_toEndOf="@id/dis_price121"
+            android:text="1234"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/blue"
+            android:textAlignment="center"
+
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/product_description121"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rsSymbol"
+            android:text="Product Description"
+            android:textAlignment="center"
+            android:layout_marginTop="2dp"
+            android:textSize="16dp"
+
+            />
+    </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
